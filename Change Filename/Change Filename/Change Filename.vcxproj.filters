@@ -18,30 +18,30 @@
     <ClCompile Include="run.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="alphanum.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="mergesort.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="quicksort.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="alphanum2.cpp">
+    <ClCompile Include="alphanum_old.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="alphanum.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="alphanum.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="mergesort.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="quicksort.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="alphanum2.h">
+    <ClInclude Include="alphanum_old.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="alphanum.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

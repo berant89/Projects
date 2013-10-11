@@ -2,43 +2,11 @@
 #include <sstream>
 #include <vector>
 #include <string>
-#include <algorithm>
 #include <Windows.h>
 
 #include "quicksort.h"
 
 using namespace std;
-
-//bool compare(string a, string b)
-//{
-//	int vala = 0, valb = 0;
-//	stringstream converta(a);
-//	converta>>vala;
-//	stringstream convertb(b);
-//	convertb>>valb;
-//	/*istringstream(a)>>vala;
-//	istringstream(b)>>valb;*/
-//	return vala < valb;
-//}
-
-//string NumberToString(int Number)
-//{
-//	stringstream ss;
-//	ss << Number;
-//	return ss.str();
-//}
-//
-//int StringToNumber(string Text)
-//{
-//	stringstream ss(Text);
-//	int result = -1;
-//	return ss >> result ? result:0;
-//}
-//
-//bool compare(int a, int b)
-//{
-//	return a < b;
-//}
 
 string wchar_t2string(const wchar_t *wchar)
 {
@@ -78,12 +46,6 @@ vector<string> listFilesInDirectory(string directoryName)
         listFileNames.push_back(wchar_t2string(FindFileData.cFileName));
 
     return listFileNames;
-}
-
-void print_names(vector<int>& listFiles)
-{
-	for each (int str in listFiles)
-        cout << str << endl;
 }
 
 void print_names(vector<string>& listFiles)
@@ -130,8 +92,6 @@ int main()
 
     listFiles = listFilesInDirectory("*.jpg");
 	
-	//sort(listFiles.begin(), listFiles.end(), compare);
-	//print_names(listFiles);
 	cout<<endl;
 	quickSort(listFiles, 0, listFiles.size()-1);
 

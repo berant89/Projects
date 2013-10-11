@@ -1,23 +1,7 @@
 #include "mergesort.h"
-#include "alphanum2.h"
-
-#include <iostream>
-#include <vector>
+#include "alphanum.h"
  
 using namespace std;
- 
-
-void mergesort(vector<string>& s1, vector<string>& s2, int low, int high)
-{
-    int pivot;
-    if(low<high)
-    {
-        pivot=(low+high)/2;
-        mergesort(s1, s2, low, pivot);
-        mergesort(s1, s2, pivot+1, high);
-        merge(s1, s2, low, pivot, high);
-    }
-}
 
 void merge(vector<string>& s1, vector<string>& s2, int low, int pivot, int high)
 {
@@ -28,7 +12,8 @@ void merge(vector<string>& s1, vector<string>& s2, int low, int pivot, int high)
  
     while((h<=pivot)&&(j<=high))
     {
-        if(compare(s1[h], s1[j]))
+		//Use compare from alphanum.h
+        if(compare(s1[h], s1[j]) < 0)
         {
             s2[i]=s1[h];
             h++;
@@ -57,4 +42,16 @@ void merge(vector<string>& s1, vector<string>& s2, int low, int pivot, int high)
         }
     }
     for(k=low; k<=high; k++) s1[k]=s2[k];
+}
+
+void mergesort(vector<string>& s1, vector<string>& s2, int low, int high)
+{
+    int pivot;
+    if(low<high)
+    {
+        pivot=(low+high)/2;
+        mergesort(s1, s2, low, pivot);
+        mergesort(s1, s2, pivot+1, high);
+        merge(s1, s2, low, pivot, high);
+    }
 }

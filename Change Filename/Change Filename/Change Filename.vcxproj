@@ -74,15 +74,15 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="alphanum_old.cpp" />
     <ClCompile Include="alphanum.cpp" />
-    <ClCompile Include="alphanum2.cpp" />
     <ClCompile Include="mergesort.cpp" />
     <ClCompile Include="quicksort.cpp" />
     <ClCompile Include="run.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="alphanum_old.h" />
     <ClInclude Include="alphanum.h" />
-    <ClInclude Include="alphanum2.h" />
     <ClInclude Include="mergesort.h" />
     <ClInclude Include="quicksort.h" />
   </ItemGroup>

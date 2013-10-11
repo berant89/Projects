@@ -1,4 +1,8 @@
-﻿Build started 11/10/2013 1:54:05 AM.
+﻿Build started 11/10/2013 1:10:12 PM.
+     1>Project "C:\Users\Eran-Tasker Desktop\Documents\Visual Studio 2010\Projects\Change Filename\Change Filename\Change Filename.vcxproj" on node 2 (clean target(s)).
+     1>_PrepareForClean:
+         Deleting file "Release\Change Filename.lastbuildstate".
+     1>Done Building Project "C:\Users\Eran-Tasker Desktop\Documents\Visual Studio 2010\Projects\Change Filename\Change Filename\Change Filename.vcxproj" (clean target(s)).
 
 Build succeeded.
 
