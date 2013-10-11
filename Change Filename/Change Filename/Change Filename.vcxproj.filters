@@ -30,6 +30,9 @@
     <ClCompile Include="alphanum.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="FileManip.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="mergesort.h">
@@ -42,6 +45,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="alphanum.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="FileManip.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

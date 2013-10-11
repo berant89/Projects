@@ -3,6 +3,12 @@
  
 using namespace std;
 
+/**
+ * @brief Merges the two current vectors.
+ * @param low The starting index.
+ * @param pivot The pivot index.
+ * @param high The ending index.
+ */
 void merge(vector<string>& s1, vector<string>& s2, int low, int pivot, int high)
 {
     int h,i,j,k;
@@ -44,6 +50,11 @@ void merge(vector<string>& s1, vector<string>& s2, int low, int pivot, int high)
     for(k=low; k<=high; k++) s1[k]=s2[k];
 }
 
+/**
+ * @brief Merges and sorts the two given vectors recursively.
+ * @param low The starting index.
+ * @param high The ending index.
+ */
 void mergesort(vector<string>& s1, vector<string>& s2, int low, int high)
 {
     int pivot;
