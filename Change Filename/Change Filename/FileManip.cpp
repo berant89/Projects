@@ -72,17 +72,17 @@ void print_names(vector<string>& listFiles)
  * @brief Renames the files with the given basename, an incremented value and its extension.
  * @param listFiles The list of files to be renamed.
  * @param newname The basename.
+ * @param number The starting number to increment from. By default it starts at 1.
  * @return A list of the new filenames.
  */
-vector<string> rename_files(vector<string>& listFiles, const string& newname)
+vector<string> rename_files(vector<string>& listFiles, const string& newname, int number = 1, const string& extension = ".jpg")
 {
 	vector<string> newFiles;
 	int result = -1;
-	int number = 1;
 	for each(string oldname in listFiles)
 	{
 		ostringstream filename;
-		filename<<newname<<number<<".jpg";
+		filename<<newname<<number<<extension;
 		string fstr = filename.str();
 
 		result = rename(oldname.c_str(), fstr.c_str());

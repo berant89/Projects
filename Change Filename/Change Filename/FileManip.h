@@ -5,5 +5,5 @@
 
 std::vector<std::string> listFilesInDirectory(const std::string& directoryName);
 void print_names(std::vector<std::string>& listFiles);
-std::vector<std::string> rename_files(std::vector<std::string>& listFiles, const std::string& newname);
+std::vector<std::string> rename_files(std::vector<std::string>& listFiles, const std::string& newname, int number, const std::string& extension);
 void exit();

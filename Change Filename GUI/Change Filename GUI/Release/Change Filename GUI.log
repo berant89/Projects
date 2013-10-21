@@ -1,0 +1,20 @@
+﻿Build started 21/10/2013 4:34:36 PM.
+     1>Project "C:\Users\Eran-Tasker Desktop\Documents\Visual Studio 2010\Projects\Change Filename GUI\Change Filename GUI\Change Filename GUI.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Touching "Release\Change Filename GUI.unsuccessfulbuild".
+       ClCompile:
+         All outputs are up-to-date.
+         All outputs are up-to-date.
+       ResourceCompile:
+         All outputs are up-to-date.
+       Link:
+         All outputs are up-to-date.
+         Change Filename GUI.vcxproj -> C:\Users\Eran-Tasker Desktop\Documents\Visual Studio 2010\Projects\Change Filename GUI\Release\Change Filename GUI.exe
+       FinalizeBuildStatus:
+         Deleting file "Release\Change Filename GUI.unsuccessfulbuild".
+         Touching "Release\Change Filename GUI.lastbuildstate".
+     1>Done Building Project "C:\Users\Eran-Tasker Desktop\Documents\Visual Studio 2010\Projects\Change Filename GUI\Change Filename GUI\Change Filename GUI.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:00.09

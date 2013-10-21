@@ -1,0 +1,27 @@
+﻿Build started 21/10/2013 4:20:29 PM.
+     1>Project "c:\Users\eran-tasker desktop\documents\visual studio 2010\Projects\win32app\win32app\win32app.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Touching "Debug\win32app.unsuccessfulbuild".
+       ClCompile:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt GT_HelloWorldWin32.cpp
+         GT_HelloWorldWin32.cpp
+       ManifestResourceCompile:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo"Debug\win32app.exe.embed.manifest.res" Debug\win32app_manifest.rc 
+       Link:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"c:\users\eran-tasker desktop\documents\visual studio 2010\Projects\win32app\Debug\win32app.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\win32app.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"c:\users\eran-tasker desktop\documents\visual studio 2010\Projects\win32app\Debug\win32app.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"c:\users\eran-tasker desktop\documents\visual studio 2010\Projects\win32app\Debug\win32app.lib" /MACHINE:X86 Debug\win32app.exe.embed.manifest.res
+         Debug\GT_HelloWorldWin32.obj
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /out:"Debug\win32app.exe.embed.manifest" /manifest Debug\win32app.exe.intermediate.manifest
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo"Debug\win32app.exe.embed.manifest.res" Debug\win32app_manifest.rc 
+       LinkEmbedManifest:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"c:\users\eran-tasker desktop\documents\visual studio 2010\Projects\win32app\Debug\win32app.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\win32app.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"c:\users\eran-tasker desktop\documents\visual studio 2010\Projects\win32app\Debug\win32app.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"c:\users\eran-tasker desktop\documents\visual studio 2010\Projects\win32app\Debug\win32app.lib" /MACHINE:X86 Debug\win32app.exe.embed.manifest.res
+         Debug\GT_HelloWorldWin32.obj
+         win32app.vcxproj -> c:\users\eran-tasker desktop\documents\visual studio 2010\Projects\win32app\Debug\win32app.exe
+       FinalizeBuildStatus:
+         Deleting file "Debug\win32app.unsuccessfulbuild".
+         Touching "Debug\win32app.lastbuildstate".
+     1>Done Building Project "c:\Users\eran-tasker desktop\documents\visual studio 2010\Projects\win32app\win32app\win32app.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:02.49
