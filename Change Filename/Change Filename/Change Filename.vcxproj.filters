@@ -24,13 +24,13 @@
     <ClCompile Include="quicksort.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="alphanum_old.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="alphanum.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="FileManip.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UI.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -41,13 +41,13 @@
     <ClInclude Include="quicksort.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="alphanum_old.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="alphanum.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="FileManip.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="UI.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
