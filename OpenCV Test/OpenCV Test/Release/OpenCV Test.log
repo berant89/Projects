@@ -1,0 +1,22 @@
+﻿Build started 28-Aug-13 20:49:53.
+     1>Project "c:\Users\eran-tasker\documents\visual studio 2010\Projects\OpenCV Test\OpenCV Test\OpenCV Test.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Creating "Release\OpenCV Test.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /IC:\opencv\build\x86\vc10\include /Zi /nologo /W3 /WX- /O2 /Oi /Oy- /GL /D WIN32 /D NDEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt opencv_test.cpp
+         opencv_test.cpp
+       Link:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"c:\users\eran-tasker\documents\visual studio 2010\Projects\OpenCV Test\Release\OpenCV Test.exe" /INCREMENTAL:NO /NOLOGO /LIBPATH:C:\opencv\build\x86\vc10\lib opencv_core246.lib opencv_imgproc246.lib opencv_highgui246.lib opencv_ml246.lib opencv_video246.lib opencv_features2d246.lib opencv_calib3d246.lib opencv_objdetect246.lib opencv_contrib246.lib opencv_legacy246.lib opencv_flann246.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Release\OpenCV Test.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"c:\users\eran-tasker\documents\visual studio 2010\Projects\OpenCV Test\Release\OpenCV Test.pdb" /SUBSYSTEM:CONSOLE /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"c:\users\eran-tasker\documents\visual studio 2010\Projects\OpenCV Test\Release\OpenCV Test.lib" /MACHINE:X86 Release\opencv_test.obj
+         Generating code
+         Finished generating code
+         OpenCV Test.vcxproj -> c:\users\eran-tasker\documents\visual studio 2010\Projects\OpenCV Test\Release\OpenCV Test.exe
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"c:\users\eran-tasker\documents\visual studio 2010\Projects\OpenCV Test\Release\OpenCV Test.exe;#1" /manifest "Release\OpenCV Test.exe.intermediate.manifest"
+       FinalizeBuildStatus:
+         Deleting file "Release\OpenCV Test.unsuccessfulbuild".
+         Touching "Release\OpenCV Test.lastbuildstate".
+     1>Done Building Project "c:\Users\eran-tasker\documents\visual studio 2010\Projects\OpenCV Test\OpenCV Test\OpenCV Test.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:01.43

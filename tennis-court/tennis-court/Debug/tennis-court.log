@@ -1,5 +1,20 @@
-﻿Build started 11/10/2013 2:00:06 AM.
+﻿Build started 03-Sep-13 12:12:01.
+     1>Project "C:\Users\Eran-Tasker\Documents\Visual Studio 2010\Projects\tennis-court\tennis-court\tennis-court.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Creating "Debug\tennis-court.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         All outputs are up-to-date.
+       ManifestResourceCompile:
+         All outputs are up-to-date.
+       Link:
+         All outputs are up-to-date.
+       Manifest:
+         All outputs are up-to-date.
+       FinalizeBuildStatus:
+         Deleting file "Debug\tennis-court.unsuccessfulbuild".
+         Touching "Debug\tennis-court.lastbuildstate".
+     1>Done Building Project "C:\Users\Eran-Tasker\Documents\Visual Studio 2010\Projects\tennis-court\tennis-court\tennis-court.vcxproj" (build target(s)).
 
 Build succeeded.
 
-Time Elapsed 00:00:00.01
+Time Elapsed 00:00:00.05

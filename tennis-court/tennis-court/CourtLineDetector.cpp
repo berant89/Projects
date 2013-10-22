@@ -6,34 +6,11 @@
 #include <iostream>
 
 //Defines
-#define SHOW_INTERMEDIATES 0 //Flag to show the images at each operation.
-#define NAME_LINES 1 //Flag for the function name_lines()
-#define DRAW_AXES 1 //Flag for the function draw_axes()
+#define SHOW_INTERMEDIATES 0
 typedef uchar BYTE;
-
 /**
- * Holds the configuration for thresholding,
- * Canny and Houghs transform.
- * @var Config::thresh
- * Threshold for thresholding.
- * @var Config::maxval
- * Value for thresholding.
- * @var Config::cThreshold
- * Canny hysteresis threshold.
- * @var Config::ratio
- * Canny recommends uppper:lower ratio between 2:1 and 3:1.
- * @var Config::kernel_size
- * Canny kernel size.
- * @var Config::rho
- * Distance resolution of the accumulator in pixels.
- * @var Config::theta
- * Angle resolution of the accumulator in pixels.
- * @var Config::lThreshold
- * Minimum number of intersections to detect a line.
- * @var Config::minLL
- * Minimum length of the line.
- * @var Config::maxLG
- * Maximum allowed gap between points on the same line to link them.
+ * @struct Holds the configuration for thresholding,
+ *	Canny and Houghs transform.
  */
 typedef struct {
 	int thresh;
@@ -79,15 +56,7 @@ CourtLineDetector::~CourtLineDetector(void)
 int CourtLineDetector::run()
 {
 	this->thresh_canny_line();
-
-	#if NAME_LINES
 	this->name_lines();
-	#endif
-	
-	#if DRAW_AXES
-	this->draw_axes();
-	#endif
-	
 	this->write_raw();
 	return 0;
 }
@@ -190,17 +159,17 @@ void CourtLineDetector::name_lines()
 	vector<string> horizLines;
 	horizLines.push_back("Baseline");
 	horizLines.push_back("Service Line");
-	Scalar colour = Scalar(255, 255, 255); //White
-	int skip = 0; //to ensure we're not on the same line
+	Scalar colour = Scalar(255, 255, 255);
+	int skip = 0;
 	for(int i = 0; i < nHlines.rows && !horizLines.empty(); ++i)
 	{
 		double val = norm(nHlines.row(i)/255, NORM_L1);
 		switch(val > 227 && !skip)
 		{
 		case 1:
-			putText(nHlines, horizLines.back(), Point(nHlines.cols/4, i+13), FONT_HERSHEY_PLAIN, 1, colour);
+			putText(nHlines, horizLines.back(), Point(nHlines.cols/2, i), FONT_HERSHEY_PLAIN, 3, colour);
 			skip = 1;
-			horizLines.pop_back(); //Pop the last word out.
+			horizLines.pop_back();
 			break;
 		default:
 			if(val < 227 && skip)
@@ -217,75 +186,14 @@ void CourtLineDetector::name_lines()
 	vertLines.push_back("Singles Sideline");
 	vertLines.push_back("Doubles Sideline");
 
-	//Hardcoded locations next to the lines.
 	vector<Point> locations;
 	locations.push_back(Point(10, nHlines.rows *0.25));
 	locations.push_back(Point(170, nHlines.rows *0.25));
-	locations.push_back(Point(nHlines.cols/4 + 100, nHlines.rows *0.25));
+	locations.push_back(Point(nHlines.cols/2 - 60, nHlines.rows *0.25));
 	locations.push_back(Point(nHlines.cols* 0.75 + 50, nHlines.rows *0.25));
 	locations.push_back(Point(1250, nHlines.rows *0.25));
 	for(int i = 0; i < vertLines.size(); ++i)
 		putText(nHlines, vertLines[i], locations[i], FONT_HERSHEY_PLAIN, 1, colour);
-
-	#if SHOW_INTERMEDIATES
-	imshow("Named Lines", nHlines);
-	waitKey();
-	#endif
-}
-
-/**
- * Draws X and Y axes on the image and intervals them.
- */
-void CourtLineDetector::draw_axes()
-{
-	//Mid points of the image.
-	int midx = nHlines.cols/2 - 50; //50 is subtracted to make the numbers and line more visible.
-	int midy = nHlines.rows/2;
-	Scalar colour = Scalar(255,255,255); //White.
-	int thickness = 1; //Line and Text thickness
-
-	//Creates x-axis.
-	line(nHlines, Point(0, midy), Point(nHlines.cols, midy), colour, thickness, CV_AA);
-	for(int i = 0; i < nHlines.cols; ++i)
-	{
-		//Divide the line every 172 pixels.
-		if(!(i%172))
-		{
-			//Draw a vertical line at twice the thickness.
-			line(nHlines, Point(i, midy-5), Point(i, midy+5), colour, 2*thickness, CV_AA);
-			//Place the number above the line.
-			std::ostringstream num;
-			num<<i;
-			putText(nHlines, num.str(), Point(i, midy-10), FONT_HERSHEY_PLAIN, thickness, colour);
-		}
-		else //Divide the line every 43 pixels at regular thickness.
-			if(!(i%43))
-				line(nHlines, Point(i, midy-5), Point(i, midy+5), colour, thickness, CV_AA);
-	}
-
-	//Creates y-axis.
-	line(nHlines, Point(midx, 0), Point(midx, nHlines.rows), colour, thickness, CV_AA);
-	for(int i = 0; i < nHlines.rows; ++i)
-	{
-		//Divide the line every 55 pixels.
-		if(!(i%55))
-		{
-			//Draw a horizontal line at twice the thickness.
-			line(nHlines, Point(midx-5, i), Point(midx+5, i), colour, 2*thickness, CV_AA);
-			//Place the number above the line.
-			std::ostringstream num;
-			num<<i;
-			putText(nHlines, num.str(), Point(midx+5, i), FONT_HERSHEY_PLAIN, thickness, colour);
-		}
-		else //Divide the line every 43 pixels at regular thickness.
-			if(!(i%11))
-				line(nHlines, Point(midx-5, i), Point(midx+5, i), colour, thickness, CV_AA);
-	}
-
-	#if SHOW_INTERMEDIATES
-	imshow("Axes", nHlines);
-	waitKey();
-	#endif
 }
 
 /**
@@ -340,7 +248,7 @@ void CourtLineDetector::write_raw()
 	for(int i = 0; it != itEnd; ++it, ++i)
 		buffer[i] = *it;
 	
-	//Create filename and add the size of the image to the name.
+	//Create filename.
 	std::ostringstream filename;
 	filename<<"court_lines "<<nHlines.cols<<"x"<<nHlines.rows<<".raw";
 	FILE *fp = fopen(filename.str().c_str(), "wb");

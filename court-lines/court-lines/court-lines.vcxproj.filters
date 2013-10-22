@@ -21,10 +21,10 @@
     <ClCompile Include="CourtLineDetector.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="LineUtil.cpp">
+    <ClCompile Include="RAWUtil.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="CannyEdge.cpp">
+    <ClCompile Include="ImageUtil.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -32,10 +32,13 @@
     <ClInclude Include="CourtLineDetector.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="LineUtil.h">
+    <ClInclude Include="RAWUtil.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="CannyEdge.h">
+    <ClInclude Include="ImageUtil.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="VecMatTypes.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

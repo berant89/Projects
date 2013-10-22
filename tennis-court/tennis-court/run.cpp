@@ -4,7 +4,7 @@
 
 int main()
 {
-	CourtLineDetector cld; //Create the object which setups everything.
-	cld.run(); //Run the program.
+	CourtLineDetector cld;
+	cld.run();
 	return 0;
 }

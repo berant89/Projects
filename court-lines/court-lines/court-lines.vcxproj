@@ -74,15 +74,16 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="CannyEdge.cpp" />
     <ClCompile Include="CourtLineDetector.cpp" />
-    <ClCompile Include="LineUtil.cpp" />
+    <ClCompile Include="ImageUtil.cpp" />
+    <ClCompile Include="RAWUtil.cpp" />
     <ClCompile Include="run.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="CannyEdge.h" />
     <ClInclude Include="CourtLineDetector.h" />
-    <ClInclude Include="LineUtil.h" />
+    <ClInclude Include="ImageUtil.h" />
+    <ClInclude Include="RAWUtil.h" />
+    <ClInclude Include="VecMatTypes.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
