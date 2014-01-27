@@ -1,5 +1,40 @@
-﻿Build started 2013-11-17 5:45:55 PM.
+﻿Build started 20/01/2014 21:29:59.
+     1>Project "C:\Users\Eran-Tasker (Sager)\Documents\Visual Studio 2010\Projects\Change Filename\Change Filename\Change Filename.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt alphanum.cpp FileManip.cpp mergesort.cpp quicksort.cpp run.cpp UI.cpp
+         UI.cpp
+         run.cpp
+         quicksort.cpp
+         mergesort.cpp
+         FileManip.cpp
+     1>c:\users\eran-tasker (sager)\documents\visual studio 2010\projects\change filename\change filename\filemanip.cpp(34): warning C4172: returning address of local variable or temporary
+         alphanum.cpp
+     1>c:\users\eran-tasker (sager)\documents\visual studio 2010\projects\change filename\change filename\alphanum.cpp(16): warning C4018: '>=' : signed/unsigned mismatch
+         Generating Code...
+       ManifestResourceCompile:
+         c:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo"Debug\Change Filename.exe.embed.manifest.res" "Debug\Change Filename_manifest.rc" 
+       Link:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Eran-Tasker (Sager)\Documents\Visual Studio 2010\Projects\Change Filename\Debug\Change Filename.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\Change Filename.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\Eran-Tasker (Sager)\Documents\Visual Studio 2010\Projects\Change Filename\Debug\Change Filename.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Eran-Tasker (Sager)\Documents\Visual Studio 2010\Projects\Change Filename\Debug\Change Filename.lib" /MACHINE:X86 "Debug\Change Filename.exe.embed.manifest.res"
+         Debug\alphanum.obj
+         Debug\FileManip.obj
+         Debug\mergesort.obj
+         Debug\quicksort.obj
+         Debug\run.obj
+         Debug\UI.obj
+       Manifest:
+         c:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /out:"Debug\Change Filename.exe.embed.manifest" /manifest "Debug\Change Filename.exe.intermediate.manifest"
+         c:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo"Debug\Change Filename.exe.embed.manifest.res" "Debug\Change Filename_manifest.rc" 
+       LinkEmbedManifest:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Eran-Tasker (Sager)\Documents\Visual Studio 2010\Projects\Change Filename\Debug\Change Filename.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\Change Filename.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\Eran-Tasker (Sager)\Documents\Visual Studio 2010\Projects\Change Filename\Debug\Change Filename.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Eran-Tasker (Sager)\Documents\Visual Studio 2010\Projects\Change Filename\Debug\Change Filename.lib" /MACHINE:X86 "Debug\Change Filename.exe.embed.manifest.res"
+         Debug\alphanum.obj
+         Debug\FileManip.obj
+         Debug\mergesort.obj
+         Debug\quicksort.obj
+         Debug\run.obj
+         Debug\UI.obj
+         Change Filename.vcxproj -> C:\Users\Eran-Tasker (Sager)\Documents\Visual Studio 2010\Projects\Change Filename\Debug\Change Filename.exe
+     1>Done Building Project "C:\Users\Eran-Tasker (Sager)\Documents\Visual Studio 2010\Projects\Change Filename\Change Filename\Change Filename.vcxproj" (Build target(s)).
 
 Build succeeded.
 
-Time Elapsed 00:00:00.03
+Time Elapsed 00:00:05.58
